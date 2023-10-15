@@ -18,6 +18,47 @@ header {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /* Three equal-width columns */
-  gap: 20px; /* Adjust gap as needed */
+  grid-template-columns: 1fr 2fr 1fr;
+  /* Three equal-width columns */
+  gap: 20px;
+  /* Adjust gap as needed */
+}
+
+.coin-list {
+  max-width: 600px;
+  /* Adjust the maximum width as needed for both computers and phones */
+  margin: 0 auto;
+  /* Center the coin list horizontally */
+  padding: 20px;
+  /* Add some padding for spacing */
+}
+
+.coin-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* Make each coin item occupy the full width */
+  margin-bottom: 20px;
+  /* Adjust the spacing between coins as needed */
+  border: 1px solid #ccc;
+  /* Add a border around each coin */
+  padding: 10px;
+  /* Add padding within each coin item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow for a card-like appearance */
+}
+
+.coin-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.coin-details {
+  flex-grow: 1;
+  /* Allow the details to take up remaining space */
+}
+
+.coin-name {
+  font-weight: bold;
 }

@@ -8,7 +8,19 @@
     </div>
 </header>
 <div class="container">
-    <app-coin-c1></app-coin-c1>
-    <app-coin-c2></app-coin-c2>
-    <app-coin-c3></app-coin-c3>
+    <div class="left">
+        
+    </div>
+    <div class="center">
+        <div class="coin-list">
+        <div *ngFor="let coin of coins" class="coin-item">
+          <img [src]="'your-server-url/' + coin.logoFileName" alt="{{ coin.name }} Logo" class="coin-logo">
+          <div class="coin-details">
+            <span class="coin-name">{{ coin.name }}</span>
+            <span class="coin-tag">{{ coin.tag }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right"></div>
 </div>
